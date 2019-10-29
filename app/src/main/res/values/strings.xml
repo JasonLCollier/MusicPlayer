@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Music Player</string>
+    <string name="title_music_library">Music Library</string>
+    <string name="title_now_playing">Now Playing</string>
+    <string name="no_album_art">No album art</string>
+    <string name="play_arrow">Play arrow</string>
+    <string name="skip_previous">Skip previous</string>
+    <string name="skip_next">Skip next</string>
+    <string name="thumb_up">Thumb up</string>
+    <string name="Thumb_down">Thumb down</string>
+</resources>

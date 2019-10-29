@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NowPlaying">
+
+    <ImageView
+        android:id="@+id/play_arrow"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:contentDescription="@string/play_arrow"
+        android:src="@drawable/baseline_play_arrow_black_48"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/album_art" />
+
+    <ImageView
+        android:id="@+id/skip_previous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/baseline_skip_previous_black_48"
+        android:contentDescription="@string/skip_previous"
+        app:layout_constraintBottom_toBottomOf="@+id/play_arrow"
+        app:layout_constraintEnd_toStartOf="@+id/play_arrow"
+        app:layout_constraintTop_toTopOf="@+id/play_arrow" />
+
+    <ImageView
+        android:id="@+id/skip_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:src="@drawable/baseline_skip_next_black_48"
+        android:contentDescription="@string/skip_next"
+        app:layout_constraintBottom_toBottomOf="@+id/play_arrow"
+        app:layout_constraintStart_toEndOf="@+id/play_arrow"
+        app:layout_constraintTop_toTopOf="@+id/play_arrow" />
+
+    <ImageView
+        android:id="@+id/album_art"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:contentDescription="@string/no_album_art"
+        android:src="@drawable/no_album_art"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/thumb_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/baseline_thumb_up_alt_black_48"
+        android:contentDescription="@string/thumb_up"
+        app:layout_constraintBottom_toBottomOf="@+id/skip_previous"
+        app:layout_constraintEnd_toStartOf="@+id/skip_previous"
+        app:layout_constraintTop_toTopOf="@+id/skip_previous" />
+
+    <ImageView
+        android:id="@+id/thumb_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/baseline_thumb_down_alt_black_48"
+        android:contentDescription="@string/Thumb_down"
+        app:layout_constraintBottom_toBottomOf="@+id/skip_next"
+        app:layout_constraintStart_toEndOf="@+id/skip_next"
+        app:layout_constraintTop_toTopOf="@+id/skip_next" />
+
+    <TextView
+        android:id="@+id/song_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/album_art"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Ed Sheeran - Perfect" />
+</android.support.constraint.ConstraintLayout>
